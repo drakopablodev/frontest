@@ -1,0 +1,15 @@
+/* Fuentes */
+@font-face {
+    font-family: "Poppins";
+    src: url("../assests/fonts/poppins/Poppins-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../assests/fonts/nunito-sans/static/NunitoSans_10pt-Regular.ttf");
+}
+
+/* Importaciones */
+@import "tailwind.css";
+@import "index.css";
+@import "header-footer.css";

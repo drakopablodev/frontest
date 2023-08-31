@@ -1,0 +1,108 @@
+* {
+
+    font-family: Nunito Sans, sans-serif;
+
+    font-weight: 600
+}
+
+header .container {
+
+    position: absolute;
+
+    width: 100%;
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgba(37, 42, 54, 1);
+
+    background-color: rgba(37, 42, 54, var(--tw-bg-opacity));
+
+    padding-top: 1rem;
+
+    padding-bottom: 1rem;
+
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(212, 222, 247, 1);
+
+    color: rgba(212, 222, 247, var(--tw-text-opacity))
+}
+header .copy {
+
+    text-align: center
+}
+header .copy a {
+
+    --tw-text-opacity: 1;
+
+    color: rgba(212, 222, 247, 1);
+
+    color: rgba(212, 222, 247, var(--tw-text-opacity));
+
+    text-decoration-line: none
+}
+header .copy a:hover {
+
+    --tw-text-opacity: 1;
+
+    color: rgba(92, 136, 218, 1);
+
+    color: rgba(92, 136, 218, var(--tw-text-opacity));
+
+    text-decoration-line: underline
+}
+
+footer .container {
+
+    position: absolute;
+
+    width: 100%;
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgba(37, 42, 54, 1);
+
+    background-color: rgba(37, 42, 54, var(--tw-bg-opacity));
+
+    padding-top: 1rem;
+
+    padding-bottom: 1rem;
+
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(212, 222, 247, 1);
+
+    color: rgba(212, 222, 247, var(--tw-text-opacity))
+}
+footer .copy {
+
+    text-align: center
+}
+footer .copy a {
+
+    --tw-text-opacity: 1;
+
+    color: rgba(212, 222, 247, 1);
+
+    color: rgba(212, 222, 247, var(--tw-text-opacity));
+
+    text-decoration-line: none
+}
+footer .copy a:hover {
+
+    --tw-text-opacity: 1;
+
+    color: rgba(92, 136, 218, 1);
+
+    color: rgba(92, 136, 218, var(--tw-text-opacity));
+
+    text-decoration-line: underline
+}
