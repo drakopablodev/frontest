@@ -1,5 +1,5 @@
 /*@import "./input-img.scss";*/
-@import "./buttons.scss";
+@import "./buttons.scss"; /* --button-add-width */
 
 .form-basic {
 
@@ -21,7 +21,7 @@
 				.input-add {
 
 					&>div {
-						@apply tw-w-2/3
+						@apply tw-w-auto
 					}
 
 					label {
@@ -29,38 +29,59 @@
 					}
 					
 					input {
-						@apply tw-float-left tw-inline-block tw-w-[calc(90%)];
+						--button-add-width: 38.5px; /* 32px + 6px margin + 1/2px extra */
+						--input-with-add-buton-width: calc(100% - var(--button-add-width));
+						@apply tw-float-left tw-inline-block tw-mt-1.5
+						tw-w-[var(--input-with-add-buton-width)];
 					}
 				}
 
 				label {
 					@apply tw-text-gray-700 dark:tw-text-gray-200 tw-mt-2 -tw-mb-2;
 				}
-
+				
 				input {
+					/*
 					@apply tw-block tw-w-full tw-px-4 tw-py-2 tw-mt-2 tw-text-gray-700 tw-bg-white tw-border 
 					tw-border-gray-300 tw-rounded-md dark:tw-bg-gray-800 dark:tw-text-gray-300 dark:tw-border-gray-600 
 					focus:tw-border-blue-500 dark:focus:tw-border-blue-500 focus:tw-outline-none focus:tw-ring;
-
-					&[type=number], &[type^=date] {
-						/*@apply tw-inline-block tw-w-[calc(40%)];*/
-					}
+					*/
+					@apply tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 tw-text-xl /*-tw-m-2.5*/
+					tw-rounded-lg focus:tw-ring-primary-600 focus:tw-border-primary-600 tw-block tw-w-full
+					tw-p-2.5 dark:tw-bg-gray-700 dark:tw-border-gray-600 dark:tw-placeholder-gray-400 
+					dark:tw-text-white dark:focus:tw-ring-blue-500 dark:focus:tw-border-blue-500;
 				}
-
+				
 				textarea {
+					/*
 					@apply tw-block tw-w-full tw-px-4 tw-py-2 tw-mt-2 tw-text-gray-700 tw-bg-white tw-border
 					tw-border-gray-300 tw-rounded-md dark:tw-bg-gray-800 dark:tw-text-gray-300 dark:tw-border-gray-600 
 					focus:tw-border-blue-500 dark:focus:tw-border-blue-500 focus:tw-outline-none focus:tw-ring
-					tw-resize-y tw-max-h-[200px];
+					tw-resize-y tw-min-h-[50px] tw-max-h-[200px];
+					*/
+					@apply tw-bg-gray-50 tw-border tw-border-gray-300 tw-text-gray-900 tw-text-xl /*-tw-m-2.5*/
+					tw-rounded-lg focus:tw-ring-primary-600 focus:tw-border-primary-600 tw-block tw-w-full
+					tw-p-2.5 dark:tw-bg-gray-700 dark:tw-border-gray-600 dark:tw-placeholder-gray-400 
+					dark:tw-text-white dark:focus:tw-ring-blue-500 dark:focus:tw-border-blue-500
+					tw-resize-y tw-min-h-[50px] tw-max-h-[200px];
 				}
 			}
 
 			.div-form-basic-button {
-				@apply tw-flex tw-justify-end tw-mt-6;
+				@apply tw-flex tw-justify-center tw-mt-10;
 
 				button {
-					@apply tw-px-6 tw-py-2 tw-leading-5 tw-text-white tw-transition-colors tw-duration-200 tw-transform 
-					tw-bg-gray-700 tw-rounded-md hover:tw-bg-gray-600 focus:tw-outline-none focus:tw-bg-gray-600;
+					@apply tw-px-20 tw-py-4 tw-leading-5 tw-text-white tw-transition-colors tw-duration-200 tw-transform 
+					tw-bg-konetic-blue-1 tw-rounded-md hover:tw-bg-konetic-blue-2
+					focus:tw-outline-none focus:tw-bg-konetic-blue-2;
+					
+					/*@apply tw-px-20 tw-py-4 tw-leading-5 tw-text-white tw-transition-colors tw-duration-200 tw-transform 
+					tw-bg-gray-700 tw-rounded-md hover:tw-bg-gray-600 focus:tw-outline-none focus:tw-bg-gray-600;*/
+
+					/*@apply tw-w-auto tw-text-white tw-bg-primary-600 hover:tw-bg-primary-700 
+					focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-primary-300 tw-font-medium 
+					tw-rounded-lg tw-text-sm tw-px-5 tw-py-2.5 tw-text-center dark:tw-bg-primary-600 
+					dark:hover:tw-bg-primary-700 dark:focus:tw-ring-primary-800;*/
 				}
 			}
 		}
