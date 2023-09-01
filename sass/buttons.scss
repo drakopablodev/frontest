@@ -25,7 +25,7 @@
 }
 
 .button-add {
-    @apply tw-float-left tw-inline-block tw-text-center tw-mt-1;
+    @apply tw-float-left tw-inline-block tw-text-center tw-ml-1.5 tw-mt-[1.1px] tw-box-border;
     vertical-align: bottom;
 }
 
@@ -33,5 +33,10 @@
 
 .buttonCrear {
     @include button($url: '../assests/images/32x32/nuevo.png', $width: 32px, $height: 32px);
+    @extend %buttonActions;
+}
+
+.buttonLimpiar {
+    @include button($url: '../assests/images/32x32/limpiar.png', $width: 32px, $height: 32px);
     @extend %buttonActions;
 }
