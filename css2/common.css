@@ -1,0 +1,21 @@
+/* Colores */
+/* Estilos globales */
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, 1);
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+    padding: 0px
+}
+
+* {
+    font-family: Nunito Sans, sans-serif;
+    font-weight: 600
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600
+}

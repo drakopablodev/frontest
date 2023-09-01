@@ -1,0 +1,42 @@
+.img-label {
+	@apply tw-block tw-text-2xl tw-font-medium tw-text-white;
+}
+
+.img-container {
+	@apply tw-mt-1 tw-flex tw-justify-center tw-px-6 tw-pt-5 tw-pb-6 tw-border-2 tw-border-gray-300 
+	tw-border-dashed tw-rounded-md;
+
+	&.img-div-1 {
+		@apply tw-space-y-1 tw-text-center;
+
+		p {
+			@apply tw-text-xs tw-text-white;
+		}
+
+		span {
+			@apply tw-hidden;
+		}
+
+		svg {
+			@apply tw-mx-auto tw-h-8 tw-w-8 tw-text-white;
+		}
+
+		&.img-div-2 {
+			@apply tw-flex tw-text-sm tw-text-gray-600;
+			
+			label {
+				@apply tw-relative tw-cursor-pointer tw-bg-white tw-rounded-md tw-font-medium 
+				tw-text-indigo-600 hover:tw-text-indigo-500 focus-within:tw-outline-none tw-hidden
+				focus-within:tw-ring-2 focus-within:tw-ring-offset-2 focus-within:tw-ring-indigo-500;
+
+				input {
+					@apply tw-sr-only;
+				}
+			}
+
+			p {
+				@apply tw-pl-1 tw-text-white;
+			}
+		}
+	}
+}

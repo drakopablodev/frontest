@@ -1,0 +1,21 @@
+
+/* Colores */
+$konetic-black: #252A36;
+$konetic-gray: #9099BA;
+$konetic-white: #fff;
+$konetic-blue-1: #2856CF;
+$konetic-blue-2: #6E8EE3;
+$konetic-blue-3: #D4DEF7;
+
+/* Estilos globales */
+html, body {
+	@apply tw-w-full tw-h-full tw-m-0 tw-p-0 tw-bg-gray-500;
+}
+
+* {
+	@apply tw-font-nunito-sans tw-font-semibold;
+}
+
+h1 {
+	@apply tw-font-poppins tw-font-semibold;
+}
