@@ -1,0 +1,50 @@
+/* Funciones comunes */
+/** se puede tanto extender funcionalidad a todos los botones o declarar la funcionalidad en el boton en si*/
+.buttonCrear {
+  /**esto no funciona: tw-scale-125 tw-transform;*/
+}
+.buttonCrear:hover {
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
+  transition-duration: 400ms;
+  transform: scale(1.2)
+}
+.buttonCrear:active {
+  transition-duration: 200ms;
+  transform: scale(0.7)
+}
+.buttonCrear:disabled {
+  pointer-events: none;
+  opacity: 0.2;
+  transition-duration: 200ms;
+  transform: scale(1)
+}
+
+.button-add {
+  float: left;
+  margin-top: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom
+}
+
+/* Botones */
+.buttonCrear {
+  position: relative;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border-style: none;
+  background-color: transparent;
+  background-image: url(../assests/images/32x32/nuevo.png);
+  background-repeat: no-repeat;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-duration: 400ms
+}

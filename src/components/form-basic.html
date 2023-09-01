@@ -1,0 +1,62 @@
+
+<section>
+    <h2>Crear Máquina</h2>
+    
+    <form>
+        <div class="div-form-basic">
+            <div>
+                <label for="zona">Zona</label>
+                <input id="zona" type="text" value="---">
+            </div>
+
+            <div>
+                <label for="maquinaSuperior">Maquina superior</label>
+                <input id="maquinaSuperior" type="text" value="---">
+            </div>
+
+            <div>
+                <label for="familia">Familia</label>
+                <input id="familia" type="text" value="---">
+            </div>
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text">
+            </div>
+
+            <div>
+                <label for="descripcion">Descripcion</label>
+                <textarea id="descripcion" type="text"></textarea>
+            </div>
+
+            <div>
+                <label for="fecha">Fecha compra</label>
+                <input id="fecha" type="date">
+            </div>
+
+            <div class="input-add">
+                <label for="garantia">Garantía</label>
+                <div>
+                    <input id="garantia" type="number" value="0">
+                    <div class="button-add">
+                        <!--Boton de nuevo-->                        
+                        <button type="button" class="buttonCrear" id="buttonCrearFamiliaZona" title="Crear" 
+                        onclick="console.log('click')">                
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label for="img">Imagen</label>
+                <input type="file" name="img" id="img" accept="image/*">
+            </div>
+
+            <!--<div include-html="./components/input-img.html"></div>-->
+        </div>
+
+        <div class="div-form-basic-button">
+            <button>Guardar</button>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,37 @@
+
+/* Funciones comunes */
+
+@mixin button($url, $width: 32px, $height: 32px) {
+    @apply tw-border-none tw-rounded tw-cursor-pointer tw-inline-block tw-relative
+    tw-mr-1 tw-mt-1 tw-outline-none tw-duration-400 tw-bg-transparent tw-bg-no-repeat
+    tw-h-[#{$height}] tw-w-[#{$width}] tw-bg-[url(#{$url})];
+}
+
+/** se puede tanto extender funcionalidad a todos los botones o declarar la funcionalidad en el boton en si*/
+%buttonActions {
+    /**esto no funciona: tw-scale-125 tw-transform;*/
+	&:hover {
+        @apply tw-shadow-sm tw-duration-400; 
+		transform: scale(1.2);
+	}
+	&:active {
+        @apply tw-duration-200;
+		transform: scale(0.7);
+	}
+	&:disabled {
+        @apply tw-duration-200 tw-opacity-20 tw-pointer-events-none;
+		transform: scale(1);
+	}
+}
+
+.button-add {
+    @apply tw-float-left tw-inline-block tw-text-center tw-mt-1;
+    vertical-align: bottom;
+}
+
+/* Botones */
+
+.buttonCrear {
+    @include button($url: '../assests/images/32x32/nuevo.png', $width: 32px, $height: 32px);
+    @extend %buttonActions;
+}
