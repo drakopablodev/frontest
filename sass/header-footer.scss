@@ -3,7 +3,7 @@ header {
 	/* Index */
 	.container {
         @apply tw-bg-konetic-black-1 tw-text-konetic-blue-3 tw-text-base tw-w-full
-        tw-fixed tw-py-4; 
+        tw-fixed tw-py-4 tw-top-0; 
 	}
 	.wrapper {
 		@apply tw-flex;
@@ -70,9 +70,11 @@ header {
 }
 
 footer {
+	@apply tw-block;
+
 	.container {
         @apply tw-bg-konetic-black-1 tw-text-konetic-blue-3 tw-text-base tw-w-full
-        tw-absolute tw-py-4; 
+        tw-relative tw-py-4 tw-bottom-0; 
 	}
 	.copy {
         @apply tw-text-center;

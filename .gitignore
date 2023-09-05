@@ -1,2 +1,4 @@
 # exclude everything except directory foo/bar
 /node_modules
+/css2
+/sass/yeti/

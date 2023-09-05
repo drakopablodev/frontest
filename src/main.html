@@ -23,24 +23,6 @@
 </head>
 
 <body>
-    <!--<header>
-        <div class="container">
-            <div class="wrapper">
-                <div class="divlogoCabecera">
-                    <a href="#" class="">
-                        <img class="img_logo" src="../assests/images/onlogo.png"
-                            alt="logo">
-                    </a>
-                </div>
-                <div class="divlogoCabecera">
-                    <a href="#" class="">
-                        <img class="img_logo" src="../assests/images/onlogo.png"
-                            alt="logo">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>-->
     <header>
         <nav>
             <div>
@@ -103,23 +85,11 @@
 
         dashboard
     </div>
-
-    <div include-html="./components/form-basic.html" class="form-basic"></div>
-
-    <!--<footer>    
-        <div class="container">
-            <div class="wrapper">
-                <div class="copy">
-                    <span>© 2017 - 2023 Konetic Digital Factory S.L.U - </span>
-                    <span>Todos los derechos reservados  |  </span>
-                    <span><a href="<%=href%>info/Derechos/Privacidad.jsp">Política de privacidad</a></span>
-                    <br>
-                    <span><a href="https://www.konetic.es">www.konetic.es</a>  |  </span>
-                    <span><a href="mailto:info@konetic.es">info@konetic.es</a></span>
-                </div>
-            </div>
-        </div>
-    </footer>-->
+    <!-- Nota: el contenido del body tiene que ir dentro de un contenedor con el tamaño de la pantalla -->
+    <div id="contenedor" style="min-height: calc(100vh - 320px);">
+        <div include-html="./components/form-basic.html" class="form-basic"></div>
+    </div>
+    <div include-html="./components/footer.html"></div>
 </body>
 
 </html>

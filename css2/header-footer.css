@@ -4,6 +4,7 @@ header {
 }
 header .container {
   position: fixed;
+  top: 0px;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgba(37, 42, 54, 1);
@@ -301,8 +302,12 @@ header nav div #mobile-menu-2 li a:current {
   }
 }
 
+footer {
+  display: block
+}
 footer .container {
-  position: absolute;
+  position: relative;
+  bottom: 0px;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgba(37, 42, 54, 1);

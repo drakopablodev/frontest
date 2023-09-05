@@ -1,3 +1,4 @@
+/*
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Nunito+Sans:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
@@ -7,22 +8,22 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Yantramanav:400,700&display=swap");
 
-/* Line Awesome */
+
 @import "line-awesome/dist/line-awesome/css/line-awesome.css";
 
-/* Tippy.js */
+
 @import "tippy.js/dist/tippy.css";
 @import "tippy.js/themes/light-border.css";
 @import "tippy.js/animations/scale.css";
 @import "tippy.js/animations/shift-toward-extreme.css";
 
-/* Animate.css */
+
 @import "animate.css/animate.css";
 
-/* Glide.js */
+
 @import "@glidejs/glide/dist/css/glide.core.css";
 
-/* Main */
+
 @import "tailwindcss/base.css";
 @import "base.css";
 @import "tailwindcss/components.css";
@@ -32,7 +33,7 @@
 @import "utilities.css";
 
 :root {
-  /* Primary */
+  
   --color-primary: theme("skin.sky.DEFAULT");
   --color-primary-50: theme("skin.sky.50");
   --color-primary-100: theme("skin.sky.100");
@@ -45,7 +46,7 @@
   --color-primary-800: theme("skin.sky.800");
   --color-primary-900: theme("skin.sky.900");
 
-  /* Gray */
+  
   --color-gray-50: theme("skin.gray.50");
   --color-gray-100: theme("skin.gray.100");
   --color-gray-200: theme("skin.gray.200");
@@ -57,7 +58,7 @@
   --color-gray-800: theme("skin.gray.800");
   --color-gray-900: theme("skin.gray.900");
 
-  /* Secondary */
+  
   --color-secondary: theme("skin.secondary.DEFAULT");
 
   --color-text-normal: var(--color-gray-600);
@@ -73,7 +74,7 @@
   --color-foreground: theme("skin.white");
   --color-input: theme("skin.white");
 
-  /* Fonts */
+  
   --font-body: "Nunito Sans";
   --font-heading: "Nunito";
 }
@@ -146,7 +147,7 @@
 }
 
 .theme-red {
-  /* Primary */
+  
   --color-primary: theme("skin.red.DEFAULT");
   --color-primary-50: theme("skin.red.50");
   --color-primary-100: theme("skin.red.100");
@@ -161,7 +162,7 @@
 }
 
 .theme-orange {
-  /* Primary */
+  
   --color-primary: theme("skin.orange.DEFAULT");
   --color-primary-50: theme("skin.orange.50");
   --color-primary-100: theme("skin.orange.100");
@@ -176,7 +177,7 @@
 }
 
 .theme-amber {
-  /* Primary */
+  
   --color-primary: theme("skin.amber.DEFAULT");
   --color-primary-50: theme("skin.amber.50");
   --color-primary-100: theme("skin.amber.100");
@@ -191,7 +192,7 @@
 }
 
 .theme-yellow {
-  /* Primary */
+  
   --color-primary: theme("skin.yellow.DEFAULT");
   --color-primary-50: theme("skin.yellow.50");
   --color-primary-100: theme("skin.yellow.100");
@@ -206,7 +207,7 @@
 }
 
 .theme-lime {
-  /* Primary */
+  
   --color-primary: theme("skin.lime.DEFAULT");
   --color-primary-50: theme("skin.lime.50");
   --color-primary-100: theme("skin.lime.100");
@@ -221,7 +222,7 @@
 }
 
 .theme-green {
-  /* Primary */
+  
   --color-primary: theme("skin.green.DEFAULT");
   --color-primary-50: theme("skin.green.50");
   --color-primary-100: theme("skin.green.100");
@@ -236,7 +237,7 @@
 }
 
 .theme-emerald {
-  /* Primary */
+  
   --color-primary: theme("skin.emerald.DEFAULT");
   --color-primary-50: theme("skin.emerald.50");
   --color-primary-100: theme("skin.emerald.100");
@@ -251,7 +252,7 @@
 }
 
 .theme-teal {
-  /* Primary */
+  
   --color-primary: theme("skin.teal.DEFAULT");
   --color-primary-50: theme("skin.teal.50");
   --color-primary-100: theme("skin.teal.100");
@@ -266,7 +267,7 @@
 }
 
 .theme-cyan {
-  /* Primary */
+  
   --color-primary: theme("skin.cyan.DEFAULT");
   --color-primary-50: theme("skin.cyan.50");
   --color-primary-100: theme("skin.cyan.100");
@@ -281,7 +282,7 @@
 }
 
 .theme-blue {
-  /* Primary */
+  
   --color-primary: theme("skin.blue.DEFAULT");
   --color-primary-50: theme("skin.blue.50");
   --color-primary-100: theme("skin.blue.100");
@@ -296,7 +297,7 @@
 }
 
 .theme-indigo {
-  /* Primary */
+  
   --color-primary: theme("skin.indigo.DEFAULT");
   --color-primary-50: theme("skin.indigo.50");
   --color-primary-100: theme("skin.indigo.100");
@@ -311,7 +312,7 @@
 }
 
 .theme-violet {
-  /* Primary */
+  
   --color-primary: theme("skin.violet.DEFAULT");
   --color-primary-50: theme("skin.violet.50");
   --color-primary-100: theme("skin.violet.100");
@@ -326,7 +327,7 @@
 }
 
 .theme-purple {
-  /* Primary */
+  
   --color-primary: theme("skin.purple.DEFAULT");
   --color-primary-50: theme("skin.purple.50");
   --color-primary-100: theme("skin.purple.100");
@@ -341,7 +342,7 @@
 }
 
 .theme-fuchsia {
-  /* Primary */
+  
   --color-primary: theme("skin.fuchsia.DEFAULT");
   --color-primary-50: theme("skin.fuchsia.50");
   --color-primary-100: theme("skin.fuchsia.100");
@@ -356,7 +357,7 @@
 }
 
 .theme-pink {
-  /* Primary */
+  
   --color-primary: theme("skin.pink.DEFAULT");
   --color-primary-50: theme("skin.pink.50");
   --color-primary-100: theme("skin.pink.100");
@@ -371,7 +372,7 @@
 }
 
 .theme-rose {
-  /* Primary */
+  
   --color-primary: theme("skin.rose.DEFAULT");
   --color-primary-50: theme("skin.rose.50");
   --color-primary-100: theme("skin.rose.100");
@@ -419,3 +420,5 @@
   --font-heading: "Yantramanav";
   --font-body: "Yantramanav";
 }
+
+*/

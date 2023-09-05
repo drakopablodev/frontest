@@ -4,8 +4,8 @@
 .form-basic {
 
 	section {
-		/* */
-		@apply tw-max-w-[calc(95%)] tw-py-4 tw-px-6 tw-mx-auto tw-bg-white tw-rounded-md tw-shadow-md dark:tw-bg-gray-800 tw-mt-20;
+		@apply tw-max-w-[calc(95%)] tw-py-4 tw-px-6 tw-mx-auto tw-bg-white tw-rounded-md tw-shadow-md 
+		dark:tw-bg-gray-800 tw-mt-20;
 
 		h2 {
 			@apply tw-text-4xl tw-font-semibold tw-text-gray-700 tw-capitalize dark:tw-text-white tw-flex
