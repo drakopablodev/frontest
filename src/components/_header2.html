@@ -1,0 +1,265 @@
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+
+    <!-- Menu Toggler -->
+    <button class="menu-toggler la la-bars" data-toggle="menu"></button>
+
+    <!-- Brand -->
+    <span class="brand"><a href="<%=nombreProyecto%>/main.jsp">OnMain</a></span>
+
+    <!-- Right -->
+    <div class="header_div_right">
+        <!-- Dark Mode -->
+        <label class="switch switch_outlined" data-toggle="tooltip" data-tippy-content="Toggle Dark Mode" aria-expanded="false">
+            <input id="darkModeToggler" type="checkbox">
+            <span></span>
+        </label>
+
+        <!-- Fullscreen -->
+        <button id="fullScreenToggler" class="la la-expand-arrows-alt" data-toggle="tooltip" data-tippy-content="Fullscreen" aria-expanded="false"></button>
+
+        <!-- User Menu -->
+        <div id="userMenu" class="dropdown">
+            <span>Programador</span>
+            <button data-toggle="custom-dropdown-menu" data-tippy-arrow="true" data-tippy-placement="bottom-end" aria-expanded="false">
+                <span class="avatar">K</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Menu Bar -->
+<aside class="menu-bar menu-sticky menu-hidden">
+    <div class="menu-items">
+        <!--<div class="menu-header hidden">
+            <a href="/" class="flex items-center mx-8 mt-8">
+                <span class="avatar w-16 h-16">JD</span>
+                <div class="ltr:ml-4 rtl:mr-4 ltr:text-left rtl:text-right">
+                    <h5>John Doe</h5>
+                    <p class="mt-2">Editor</p>
+                </div>
+            </a>
+            <hr class="mx-8 my-4">
+        </div>-->
+        <a href="<%=nombreProyecto%>/main.jsp" title="Acceso a menú principal"
+           class="link" data-toggle="tooltip-menu" data-tippy-content="Dashboard">
+            <span class="icon la la-laptop"></span>
+            <span class="title">Dashboard</span>
+        </a>
+        <!--<a href="http://onmain.konetic.es:8088/data/perspective/client/Proyecto_Demo/" title="Acceso a SCADA"
+           class="link" data-toggle="tooltip-menu" data-tippy-content="Scada">
+            <span class="icon la la-microchip"></span>
+            <span class="title">Scada</span>
+        </a>-->
+        <button class="link" data-target="[data-menu=menu]" data-toggle="tooltip-menu" data-tippy-content="Menu">
+            <span class="icon la la-sitemap"></span>
+            <span class="title">Menu</span>
+        </button>
+        <button class="link" data-target="[data-menu=settings]" data-toggle="tooltip-menu" data-tippy-content="Settings">
+            <span class="icon la la-cog"></span>
+            <span class="title">Settings</span>
+        </button>
+    </div>
+
+    <!-- Settings -->
+    <div class="menu-detail" data-menu="settings">
+        <div class="menu-detail-wrapper">
+          <h6 class="uppercase">Opciones</h6>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Configuracion.jsp" title="Acceso a toda la configuración de la aplicación.">
+                <span class="la la-tools"></span>
+                Configuración
+            </a>
+            <a href="Main/Web/Menus/ConfiguracionUsuario.jsp" title="Acceso a la configuración personal de usuario.">
+                <span class="la la-user"></span>
+                Usuario
+            </a>
+            <a href="Main/Web/Menus/Log.jsp" title="Acceso a los errores ocurridos en el código de la aplicación.">
+                <span class="la la-exclamation-triangle"></span>
+                Log
+            </a>
+            <a href="#" id="btnCerrarSesion" title="Cerrar sesión de usuario">
+                <span class="la la-power-off"></span>
+                Cerrar Sesión
+            </a>
+            <!--<hr>
+            <h6 class="uppercase">Menu Types</h6>
+            <a href="#no-link" data-toggle="menu-type" data-value="default">
+                <span class="la la-hand-point-right"></span>
+                Default
+            </a>
+            <a href="#no-link" data-toggle="menu-type" data-value="hidden">
+                <span class="la la-hand-point-left"></span>
+                Hidden
+            </a>
+            <a href="#no-link" data-toggle="menu-type" data-value="icon-only">
+                <span class="la la-th-large"></span>
+                Icons Only
+            </a>
+            <a href="#no-link" data-toggle="menu-type" data-value="wide">
+                <span class="la la-arrows-alt-h"></span>
+                Wide
+            </a>-->
+        </div>
+    </div>
+    
+    <!-- Menu -->
+    <div class="menu-detail" data-menu="menu">
+        <div class="menu-detail-wrapper">
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Compras.jsp" 
+                          title="Acceso al módulo de compras.">
+                <span class="la la-shopping-cart"></span>
+                Compras
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Ventas.jsp" 
+                          title="Acceso al módulo de ventas.">
+                <span class="la la-store-alt"></span>
+                Ventas
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Contabilidad.jsp'" 
+                          title="Acceso al módulo de contabilidad.">
+                <span class="la la-coins"></span>
+                Contabilidad
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Existencias.jsp" 
+                          title="Acceso al módulo de existencias.">
+                <span class="la la-chart-pie"></span>
+                Existencias
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Mantenimiento.jsp" 
+                          title="Acceso al módulo de Mantenimiento.">
+                <span class="la la-tools"></span>
+                Trabajos
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Maquinaria.jsp" 
+                          title="Acceso al modulo maquinaria.">
+                <span class="la la-truck"></span>
+                Maquinaria
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Control.jsp" 
+                          title="Acceso a todo el control de consumos de electricidad, gas y agua.">
+                <span class="la la-keyboard"></span>
+                Control
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Produccion.jsp" 
+                          title="Acceso a producción.">
+                <span class="la la-industry"></span>
+                Producción
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Calidad.jsp" 
+                          title="Acceso a Calidad.">
+                <span class="la la-list-alt"></span>
+                Calidad
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Electricidad.jsp" 
+                          title="Acceso a electricidad.">
+                <span class="la la-bolt"></span>
+                Electricidad
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Comunicacion.jsp" 
+                          title="Acceso al modulo de comunicación.">
+                <span class="la la-share-alt-square"></span>
+                Comunicación
+            </a>
+            <a href="<%=nombreProyecto%>/Main/Web/Menus/Estados.jsp" 
+                          title="Acceso al control de conexiones con las sesiones de usuarios.">
+                <span class="la la-plug"></span>
+                Estados
+            </a>
+            <button class="collapse-header" data-toggle="collapse" data-target="#comprasOpen">
+                <span class="collapse-indicator la la-shopping-cart"></span>
+                Compras
+            </button>
+            <div id="comprasOpen" class="collapse">
+              <a href="#no-link">
+                  <span class="la la-arrow-circle-right"></span>
+                  Recepción general
+              </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Cesta compras
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Pedidos
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Albaranes
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Facturas
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Documento
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Proveedores
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Tarifas proveedor
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Informes
+            </a>
+            </div>
+                          
+            <hr>
+            
+            <a href="#no-link">
+                <span class="la la-layer-group"></span>
+                Main Level
+            </a>
+            <a href="#no-link">
+                <span class="la la-arrow-circle-right"></span>
+                Grand Parent
+            </a>
+            <button class="collapse-header active" data-toggle="collapse" data-target="#menuGrandParentOpen">
+                <span class="collapse-indicator la la-arrow-circle-down"></span>
+                Grand Parent Open
+            </button>
+            <div id="menuGrandParentOpen" class="collapse open">
+                <a href="#no-link">
+                    <span class="la la-layer-group"></span>
+                    Sub Level
+                </a>
+                <a href="#no-link">
+                    <span class="la la-arrow-circle-right"></span>
+                    Parent
+                </a>
+                <button class="collapse-header active" data-toggle="collapse" data-target="#menuParentOpen">
+                    <span class="collapse-indicator la la-arrow-circle-down"></span>
+                    Parent Open
+                </button>
+                <div id="menuParentOpen" class="collapse open">
+                    <a href="#no-link">
+                        <span class="la la-layer-group"></span>
+                        Sub Level
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+
+
+<!-- ============================================================== -->
+<!-- Workspace -->
+<!-- ============================================================== -->
+<main class="workspace">
+
+  <!-- Breadcrumb --
+  <section class="breadcrumb">
+      <h1>Dashboard</h1>
+      <ul>
+          <li><a href="#no-link">Login</a></li>
+          <li class="divider la la-arrow-right"></li>
+          <li>Dashboard</li>
+      </ul>
+  </section>-->
